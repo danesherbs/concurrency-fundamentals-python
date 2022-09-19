@@ -1,4 +1,4 @@
-Threading vs multiprocessing in Python
+## Threading vs multiprocessing in Python
 
 | Threads                                         | Processes                                           |
 |-------------------------------------------------|-----------------------------------------------------|
