@@ -34,7 +34,7 @@ print(f"Single threaded: completed in {time() - start:.2f} seconds")
 
 start = time()
 with ThreadPoolExecutor() as executor:
-    executor.map(lambda _: sleep(1), range(3))
+    executor.map(lambda _: sleep(1), range(3))  # executor.map is not lazy; lambda fn is called immediately
 print(f"Multi-threaded: completed in {time() - start:.2f} seconds")
 
 # %%
