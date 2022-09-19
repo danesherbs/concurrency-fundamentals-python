@@ -16,4 +16,4 @@ Multiprocessing enables you to run code in parallel. Multiprocessing is used to 
 
 ## Python threading and multiprocessing API
 
-The Python API for both threads and processes is the same; they both have a `run()` method which is invoked when the thread/processes `start()` method is invoked.
+The Python API for both threads and processes is the same; they both have a `run()` method which is invoked when the thread's/processes `start()` method is invoked.
