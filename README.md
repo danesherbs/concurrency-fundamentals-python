@@ -6,3 +6,10 @@
 | Fast to spawn                                   | Slow to spawn                                       |
 | Memory shared with other threads in the process | Memory not shared between processes                 |
 | GIL shared with other threads in the process    | GIL not shared between processes (one per process)  |
+
+
+## When to use one over the other
+
+Threading enables you to run code concurrently but not in parallel. Threading is used to speed up programs which are I/O bound (e.g. lots of accessing the file system or making network requests).
+
+Multiprocessing enables you to run code in parallel. Multiprocessing is used to speed up programs which are _not_ I/O bound (e.g. using map reduce to sum up a large array of integers).
