@@ -26,6 +26,7 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.submit(worker)
 
 print(f"Multi-threaded: {time() - start:.2f} seconds")  # 0.94 seconds
+
 # %%
 
 start = time()
