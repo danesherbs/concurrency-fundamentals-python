@@ -16,7 +16,7 @@ Threading allows you to run code concurrently (but not in parallel). Threading i
 
 ### Processes
 
-Multiprocessing allows you to run code in parallel. Multiprocessing is used to speed up programs which are CPU-bound (that is, when the program spends most of its time doing CPU operations). This can happen when doing computationally itensive tasks like using map reduce. Multiprocessing speeds up CPU-bound programs by doing more computations per second.
+Multiprocessing allows you to run code in parallel. Multiprocessing is used to speed up programs which are CPU-bound (that is, when the program spends most of its time doing CPU operations). This can happen when doing computationally itensive tasks like data wrangling. Multiprocessing speeds up CPU-bound programs by doing more computations per second.
 
 ## Python threading and multiprocessing API
 
