@@ -10,9 +10,13 @@
 
 ## When to use one over the other
 
-Threading enables you to run code concurrently but not in parallel. Threading is used to speed up programs which are I/O bound (e.g. lots of accessing the file system or making network requests).
+### Threads
 
-Multiprocessing enables you to run code in parallel. Multiprocessing is used to speed up programs which are _not_ I/O bound (e.g. using map reduce to sum up a large array of integers).
+Threading allows you to run code concurrently (but not in parallel). Threading is used to speed up programs which are I/O-bound (that is, when the program spends most of its time communicating). This can happen when making network requests or writing to a hard drive. Threading speeds up I/O-bound programs by overlapping the time spent waiting. 
+
+### Processes
+
+Multiprocessing allows you to run code in parallel. Multiprocessing is used to speed up programs which are CPU-bound (that is, when the program spends most of its time doing CPU operations). This can happen when doing computationally itensive tasks like using map reduce. Multiprocessing speeds up CPU-bound programs by doing more computations per second.
 
 ## Python threading and multiprocessing API
 
